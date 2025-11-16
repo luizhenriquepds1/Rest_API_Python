@@ -1,0 +1,53 @@
+# Ignorar arquivos e diretórios gerados automaticamente.
+
+### Python
+# Byte-code files
+*.pyc
+__pycache__/
+*.$py.class
+
+# Distribution / packaging
+.Python
+build/
+dist/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environments
+venv/
+env/
+.venv/
+.virtualenv/
+.tox/
+
+# Test and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*~
+
+### FastAPI / Uvicorn
+# Arquivos de log e temporários
+*.log
+*.tmp
+
+### SQLAlchemy / Alembic
+# Arquivo de banco de dados SQLite (geralmente gerado localmente)
+banco.db
+
+# Diretório de versões de migração do Alembic (opcional, mas geralmente mantido)
+# Se o diretório 'alembic/versions' for ignorado, as migrações não serão versionadas.
+# No entanto, o arquivo 'alembic.ini' e o diretório 'alembic' raiz devem ser mantidos.
+# Se o banco de dados for recriado a cada vez, o arquivo 'banco.db' é suficiente.
+
+# Se houver arquivos de dados sensíveis ou de configuração local
+# .env
+# .env.*
+# config.local.py
